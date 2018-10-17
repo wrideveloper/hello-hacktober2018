@@ -12,7 +12,7 @@ Seru seruan hacktoberfest 2018 :checkered_flag:
 
 ## :scroll: Step mengikuti event
 
-1. Daftarkan akunmu [disini](hacktoberfest.digitalocean.com)
+1. Daftarkan akunmu [disini](https://hacktoberfest.digitalocean.com)
 
 2. Kemudian fork repo ini ya
 ![forks](res/forks.png)
