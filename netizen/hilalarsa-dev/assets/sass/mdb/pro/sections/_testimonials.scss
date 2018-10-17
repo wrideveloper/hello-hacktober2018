@@ -1,0 +1,58 @@
+// Testimonials
+// Testimonial card
+.testimonial-card {
+    .card-up {
+        overflow: hidden;
+        height: 120px;
+    }
+    .avatar {
+        @include border-radius(50%);
+        height: 120px;
+        width: 120px;
+        margin: -65px auto 0;
+        overflow: hidden;
+        border: 5px solid #fff;
+        background: #FFF;
+    }
+    .avatar img {
+        width: 100%;
+    }
+    .card-block {
+        text-align: center;
+    }
+}
+
+.testimonial-carousel {
+    text-align: center;
+    .carousel-control {
+        background-image: none;
+        color: black;
+        span {
+            font-size: 5rem;
+        }
+    }
+    .testimonial {
+        margin-right: 15%;
+        margin-left: 15%;
+        .avatar {
+            margin-bottom: 2rem;
+            @extend .flex-center;
+            img {
+                max-width: 170px;
+                @extend .z-depth-2;
+            }
+        }
+        h4 {
+            margin-bottom: 1.3rem;
+            font-weight: 500;
+        }
+        h5 {
+            margin-bottom: 0.9rem;
+            color: #424242;
+            font-weight: 400;
+        }
+        p {
+            color: #666;
+        }
+    }
+}

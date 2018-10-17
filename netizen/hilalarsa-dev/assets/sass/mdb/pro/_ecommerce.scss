@@ -1,0 +1,166 @@
+// E-COMMERCE
+// Product card
+.product-card {
+    .tag {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: $rgba-red-strong;
+        font-size: 1.4rem;
+    }
+    .action-buttons {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        .activator {
+            float: none;
+            padding: 0;
+            margin-right: 0;
+            font-size: 1rem;
+        }
+        .btn-floating {
+            display: block;
+            background-color: $primary-color;
+            height: 37px;
+            width: 37px;
+            line-height: 0;
+            .fa,
+            .material-icons {
+                font-size: 14px;
+                margin-top: 1px;
+            }
+        }
+    }
+    .rating {
+        position: absolute;
+        margin-top: -16px;
+        right: 10px;
+        background-color: $primary-color-dark;
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+        &:hover {
+            .fa {
+                color: gold;
+                transition: all 0.4s linear;
+            }
+        }
+    }
+    .card-block {
+        .card-title,
+        .card-text {
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+    }
+    .cta {
+        text-align: center;
+        padding-bottom: 1rem;
+        p {
+            font-size: 1.3rem;
+            color: green;
+            span {
+                color: black;
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+
+// Quick look modal
+.ql-modal,
+.product-panel {
+    .modal-dialog {
+        max-width: none;
+        width: auto;
+        margin: 2rem;
+    }
+    .modal-header {
+        text-align: center;
+    }
+    .price {
+        .tag {
+            background-color: $rgba-red-strong;
+            font-size: 1.4rem;
+            display: inline-block;
+            margin-left: 1rem;
+        }
+        p {
+            display: inline-block;
+            font-size: 1.3rem;
+            .price-before {
+                color: black;
+                text-decoration: line-through;
+                margin-left: 0.5rem;
+            }
+            .price-after {
+                font-size: 1.7rem;
+                color: green;
+            }
+        }
+    }
+    .media img {
+        max-width: 60px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .ql-modal {
+        .modal-dialog {
+            margin: 0;
+        }
+        padding-left: 0;
+    }
+}
+
+.wishlist {
+    @extend .btn-small;
+    background-color: $danger-color;
+}
+
+// Collection card
+.collection-card {
+    .stripe {
+        position: absolute;
+        bottom: 3rem;
+        width: 100%;
+        text-align: center;
+        padding: 1.2rem;
+        &.dark {
+            background-color: $rgba-black-strong;
+            a p {
+                color: #eeeeee;
+            }
+        }
+        &.light {
+            background-color: $rgba-white-strong;
+            a p {
+                color: #424242;
+            }
+        }
+        a {
+            p {
+                padding: 0;
+                margin: 0;
+                letter-spacing: 4px;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+// Cart modal
+.cart-modal {
+    .table,
+    th {
+        text-align: center;
+    }
+    .table {
+        .total {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .fa-remove {
+            color: $primary-color;
+        }
+    }
+}

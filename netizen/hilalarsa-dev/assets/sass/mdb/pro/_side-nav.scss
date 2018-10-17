@@ -1,0 +1,420 @@
+    // SIDENAV
+    .side-nav {
+        position: fixed;
+        width: 240px;
+        left: 0;
+        top: 0;
+        margin: 0;
+        transform: translateX(-100%);
+        height: 100%;
+        height: calc(100%+ 60px);
+        height: -moz-calc(100%); //Temporary Firefox Fix
+        padding-bottom: 60px;
+        background-color: #fff;
+        z-index: 999;
+        backface-visibility: hidden;
+        overflow-y: auto;
+        will-change: transform;
+        backface-visibility: hidden;
+        transform: translateX(-105%);
+        color: #fff;
+        @extend .z-depth-1;
+        // Right Align
+        &.right-aligned {
+            right: 0;
+            transform: translateX(105%);
+            left: auto;
+            transform: translateX(100%);
+        }
+        .collapsible {
+            margin: 0;
+            >li {
+                padding-right: 1rem;
+                padding-left: 1rem;
+                @include border-radius (2px);
+            }
+            a {
+                margin-bottom: 5px;
+                color: #fff;
+                font-weight: 300;
+                font-size: 0.9rem;
+                height: 45px;
+                line-height: 45px;
+                &.active {
+                    @include border-radius (2px);
+                }
+                &:hover {
+                    @include border-radius (2px);
+                }
+            }
+            .fa {
+                font-size: 1.2rem;
+                margin-right: 13px;
+            }
+        }
+        .collapsible-body a {
+            padding-left: 30px;
+            height: 45px;
+            line-height: 45px;
+        }
+        a {
+            display: block;
+            font-size: 1rem;
+            height: 56px;
+            line-height: 56px;
+            padding-left: 20px;
+        }
+        // SideNav logo
+        .logo-wrapper {
+            height: 140px;
+            a {
+                height: 140px;
+                width: 240px;
+                padding: 0;
+            }
+            img {
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 20%;
+                padding-bottom: 20%;
+            }
+        }
+        @media (max-height: 910px) {
+            .logo-wrapper {
+                height: 80px;
+                a {
+                    height: 80px;
+                }
+                img {
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    padding-top: 7%;
+                    padding-bottom: 7%;
+                }
+            }
+        }
+        // About
+        .about {
+            padding: 1rem;
+            border-bottom: 1px solid rgba(153, 153, 153, 0.298039);
+            p {
+                margin-bottom: 0;
+                text-align: center;
+            }
+        }
+        //Social
+        .social {
+            padding: 0;
+            text-align: center;
+            border-bottom: 1px solid rgba(153, 153, 153, 0.298039);
+            li {
+                display: inline-block;
+                padding: 0;
+                margin: 0;
+            }
+            a {
+                padding: 0;
+                margin: 0;
+                padding-right: 0.6rem;
+                padding-left: 0.6rem;
+            }
+        }
+        //Search form
+        .search-form {
+            padding: 0;
+            // Style Placeholders
+            ::-webkit-input-placeholder {
+                color: #fff!important;
+            }
+            :-moz-placeholder {
+                /* Firefox 18- */
+                color: #fff!important;
+            }
+            ::-moz-placeholder {
+                /* Firefox 19+ */
+                color: #fff!important;
+            }
+            :-ms-input-placeholder {
+                color: #fff!important;
+            }
+            input[type=text] {
+                border-bottom: 1px solid #fff;
+                font-weight: 300;
+                padding-left: 30px;
+            }
+            .form-control {
+                color: #fff;
+            }
+        }
+        .sn-avatar-wrapper {
+            padding-left: 33%;
+            padding-right: 33%;
+            padding-top: 10%;
+            img {
+                margin: 0;
+                padding: 0;
+                max-width: 90px;
+                @include border-radius(5rem);
+            }
+        }
+        @media only screen and (max-height: 910px) {
+            .sn-avatar-wrapper {
+                padding-left: 40%;
+                padding-right: 40%;
+                padding-top: 3%;
+                img {
+                    max-width: 50px;
+                }
+            }
+        }
+        .sn-ad-avatar-wrapper {
+            height: auto;
+            margin-bottom: 0;
+            img {
+                max-width: 60px;
+                padding: 20px 10px;
+                float: left;
+            }
+            p {
+                font-size: 15px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                margin: 0;
+            }
+        }
+        .fa-angle-down {
+            &.rotate-icon {
+                position: absolute;
+                right: 0;
+                top: 13px;
+            }
+        }
+    }
+    
+    // Light Variation
+    .light-side-nav {
+        .logo-wrapper {
+            height: 80px;
+            a {
+                height: 80px;
+            }
+            img {
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 7%;
+                padding-bottom: 7%;
+            }
+        }
+        p {
+            color: #1C2331;
+        }
+        .collapsible a {
+            color: #1C2331;
+        }
+        .social {
+            border-top: 1px solid #eeeeee;
+            border-bottom: 1px solid #eeeeee;
+        }
+        .navbar-form {
+            margin: 10px;
+        }
+    }
+    
+    // Dark Variation
+    .dark-side-nav {
+        background-color: $elegant-color-dark;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/regular/nature/img%20(17).jpg") no-repeat center center;
+            background-size: cover;
+        }
+        li {
+            background-color: $elegant-color-dark;
+            &:hover,
+            &.active {
+                background-color: $elegant-color;
+            }
+        }
+        p {
+            color: #fff;
+        }
+        .collapsible a {
+            color: #fff;
+            margin: 0;
+            &:active {
+                background-color: $elegant-color;
+            }
+            &.active {
+                background-color: $elegant-color;
+            }
+        }
+        .collapsible {
+            >li {
+                padding: 0;
+            }
+        }
+        .social {
+            border-top: 1px solid $stylish-color;
+            border-bottom: 1px solid $stylish-color;
+            a {
+                color: #fff;
+            }
+        }
+    }
+    
+    // Colorful Variation
+    .colorful-side-nav {
+        background-color: $default-color-dark;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/regular/nature/img%20(23).jpg") no-repeat center center;
+            background-size: cover;
+        }
+        li {
+            background-color: $default-color-dark;
+            &:hover,
+            &.active {
+                background-color: lighten( $default-color-dark, 5%);
+            }
+        }
+        p {
+            color: #fff;
+        }
+        .collapsible a {
+            margin: 0;
+            color: #fff;
+            &:active {
+                background-color: lighten( $default-color-dark, 5%);
+            }
+            &.active {
+                background-color: lighten( $default-color-dark, 5%);
+            }
+        }
+        .collapsible {
+            >li {
+                padding: 0;
+            }
+        }
+        .social {
+            border-top: 1px solid #26a69a;
+            border-bottom: 1px solid #26a69a;
+            a {
+                color: #fff;
+            }
+        }
+    }
+    
+    // Stylish Variation
+    // Dark Variation
+    .stylish-side-nav {
+        background-color: $stylish-color-dark;
+        .logo-wrapper {
+            background: url("http://mdbootstrap.com/images/regular/nature/img%20(26).jpg") no-repeat center center;
+            background-size: cover;
+        }
+        li {
+            background-color: $stylish-color-dark;
+            &:hover,
+            &.active {
+                background-color: $stylish-color;
+            }
+        }
+        p {
+            color: #fff;
+        }
+        .collapsible a {
+            margin: 0;
+            color: #fff;
+            &:active {
+                background-color: $stylish-color;
+            }
+            &.active {
+                background-color: $stylish-color;
+            }
+        }
+        .collapsible {
+            >li {
+                padding: 0;
+            }
+        }
+        .social {
+            border-top: 1px solid $stylish-color;
+            border-bottom: 1px solid $stylish-color;
+            a {
+                color: #fff;
+            }
+        }
+    }
+    
+    // Touch interaction
+    .drag-target {
+        height: 100%;
+        width: 10px;
+        position: fixed;
+        top: 0;
+        z-index: 998;
+    }
+    
+    // Fixed side-nav shown
+    .side-nav.fixed {
+        left: 0;
+        transform: translateX(0);
+        position: fixed;
+        // Right Align
+        &.right-aligned {
+            right: 0;
+            left: auto;
+        }
+    }
+    
+    // Fixed sideNav hide on smaller
+    @media #{$medium-and-down} {
+        .side-nav.fixed {
+            transform: translateX(-105%);
+            &.right-aligned {
+                transform: translateX(105%);
+            }
+        }
+    }
+    
+    #sidenav-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 120vh;
+        background-color: rgba(0, 0, 0, .5);
+        z-index: 997;
+        will-change: opacity;
+    }
+    
+    //Button Collapse Without Navbar
+    .side-nav .double-navbar .bc-min {
+        padding: 5px 10px;
+        .button-collapse {
+            padding-left: 0px;
+        }
+    }
+    
+    // Input line color
+    .light-side-nav .search-form {
+        // Style Placeholders
+        ::-webkit-input-placeholder {
+            color: #1C2331!important;
+        }
+        :-moz-placeholder {
+            /* Firefox 18- */
+            color: #1C2331!important;
+        }
+        ::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #1C2331!important;
+        }
+        :-ms-input-placeholder {
+            color: #1C2331!important;
+        }
+        input[type=text] {
+            border-bottom: 1px solid #1C2331;
+        }
+        .form-control {
+            color: #1C2331;
+        }
+    }

@@ -1,0 +1,52 @@
+// Templates
+// Fixed SideNav
+.fixed-sn {
+    .double-nav,
+    main,
+    footer {
+        padding-left: 240px;
+    }
+    main {
+        padding-top: 5.5rem;
+    }
+    @media (max-width: 1440px) {
+        .double-nav,
+        main,
+        footer {
+            padding-left: 0;
+        }
+    }
+    @media (min-width: 768px) {
+        main {
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+    }
+    @media (min-width: 992px) {
+        main {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+    @media (min-width: 1400px) {
+        main {
+            margin-left: 6%;
+            margin-right: 6%;
+        }
+    }
+}
+
+// Hidden SideNav
+.hidden-sn {
+    main {
+        padding-top: 5.5rem;
+    }
+    .button-collapse {
+        display: block;
+        position: relative;
+        font-size: 1.4rem;
+        margin-right: 10px;
+        margin-left: -6px;
+        padding-left: 0;
+    }
+}

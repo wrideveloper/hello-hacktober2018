@@ -1,0 +1,10 @@
+// Animations pro
+.rotate-element {
+    @include transform (rotate(180deg));
+}
+
+.fa-angle-down {
+    &.rotate-icon {
+        @include transition (all 150ms ease-in 0s);
+    }
+}
