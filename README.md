@@ -53,7 +53,9 @@ dan buat Pull Request ke branch master
 
 ## :trollface: Kontributor
 
-- [@ffadilaputra](github.com/ffadilaputra)
+- [@ffadilaputra](https://github.com/ffadilaputra)
+- [@hilalarsa](https://github.com/hilalarsa)
+- [@Yudhst](https://github.com/Yudhst)
 
 ## :octocat: Organization
 ![](res/item.png)
