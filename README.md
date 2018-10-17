@@ -53,6 +53,8 @@ dan buat Pull Request ke branch master
 
 ## :trollface: Kontributor
 
+- [@ardhapanduwinata](https://github.com/ardhapanduwinata)
+- [@dinarpratnya12](https://github.com/dinarpratnya12)
 - [@ffadilaputra](https://github.com/ffadilaputra)
 - [@hilalarsa](https://github.com/hilalarsa)
 - [@Yudhst](https://github.com/Yudhst)
