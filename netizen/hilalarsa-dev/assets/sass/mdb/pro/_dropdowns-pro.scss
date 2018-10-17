@@ -1,0 +1,219 @@
+// DROPDOWN PRO
+.dropdown-content {
+    @extend .z-depth-1;
+    background-color: $dropdown-bg-color;
+    margin: 0;
+    display: none;
+    min-width: 100px;
+    max-height: 650px;
+    overflow-y: auto;
+    opacity: 0;
+    position: absolute;
+    z-index: 999;
+    will-change: width, height;
+    li {
+        clear: both;
+        color: $off-black;
+        cursor: pointer;
+        line-height: 1.5rem;
+        width: 100%;
+        text-align: left;
+        text-transform: none;
+        &:hover,
+        &.active {
+            background-color: $dropdown-hover-bg-color;
+        }
+        & > a,
+        & > span {
+            font-size: 1.2rem;
+            color: $dropdown-color;
+            display: block;
+            padding: 1rem 1rem;
+        }
+        // Icon alignment override
+        & > a > i {
+            height: inherit;
+            line-height: inherit;
+        }
+    }
+}
+
+// Material select color variations
+.colorful-select {
+    .dropdown-content {
+        padding: 0.5rem;
+        li {
+            &.active {
+                span {
+                    color: #fff!important;
+                    @extend .z-depth-1-half;
+                }
+            }
+            a,
+            span {
+                &:hover {
+                    color: #fff!important;
+                    @extend .z-depth-2;
+                    @include transition (all 0.1s linear);
+                    @include border-radius (2px);
+                }
+            }
+        }
+    }
+}
+
+.dropdown-primary .dropdown-content li {
+    &.active {
+        background-color: $primary-color;
+    }
+    a,
+    span {
+        &:hover {
+            background-color: $primary-color;
+        }
+    }
+}
+.dropdown-danger .dropdown-content li {
+    &.active {
+        background-color: $danger-color-dark;
+    }
+    a,
+    span {
+        &:hover {
+            background-color: $danger-color-dark;
+        }
+    }
+}
+.dropdown-default .dropdown-content li {
+    &.active {
+        background-color: $default-color;
+    }
+    a,
+    span {
+        &:hover {
+            background-color: $default-color;
+        }
+    }
+}
+.dropdown-secondary .dropdown-content li {
+    &.active {
+        background-color: $secondary-color;
+    }
+    a,
+    span {
+        &:hover {
+            background-color: $secondary-color;
+        }
+    }
+}
+.dropdown-success .dropdown-content li {
+    &.active {
+        background-color: $success-color;
+    }
+    a,
+    span {
+        &:hover {
+            background-color: $success-color;
+        }
+    }
+}
+.dropdown-info .dropdown-content li {
+    &.active {
+        background-color: $info-color;
+    }
+    a,
+    span {
+        &:hover {
+            background-color: $info-color;
+        }
+    }
+}
+.dropdown-warning .dropdown-content li {
+    &.active {
+        background-color: $warning-color;
+    }
+    a,
+    span {
+        &:hover {
+            background-color: $warning-color;
+        }
+    }
+}
+.dropdown-ins .dropdown-content li {
+    &.active {
+        background-color: $ins-color;
+    }
+    a,
+    span {
+        &:hover {
+            background-color: $ins-color;
+        }
+    }
+}
+
+.dropdown-dark .dropdown-content li {
+    &.active {
+        background-color: $elegant-color;
+    }
+    a,
+    span {
+        &:hover {
+            background-color: $elegant-color;
+        }
+    }
+}
+
+// Dropdown color variations
+.dropdown {
+    .dropdown-menu {
+        padding: 0.5rem;
+        &.dd-right { 
+            left: -100px;
+        }
+        &.dropdown-primary .dropdown-item:hover {
+            background-color: $primary-color;
+        }
+        &.dropdown-danger .dropdown-item:hover {
+            background-color: $danger-color-dark;
+        }
+        &.dropdown-default .dropdown-item:hover {
+            background-color: $default-color;
+        }
+        &.dropdown-secondary .dropdown-item:hover {
+            background-color: $secondary-color;
+        }
+        &.dropdown-success .dropdown-item:hover {
+            background-color: $success-color;
+        }
+        &.dropdown-info .dropdown-item:hover {
+            background-color: $info-color;
+        }
+        &.dropdown-warning .dropdown-item:hover {
+            background-color: $warning-color-dark;
+        }
+        &.dropdown-ins .dropdown-item:hover {
+            background-color: $ins-color;
+        }
+         &.dropdown-dark .dropdown-item:hover {
+            background-color: $elegant-color;
+        }
+        .dropdown-item {
+            padding: 1rem;
+            margin-left:0;
+            &:hover {
+                border-radius: 2px;
+                color: #fff!important;
+                transition: all 0.1s linear;
+                @extend .z-depth-2;
+            }
+        }
+    }
+}
+
+.dropdown-menu.animated {
+    /* Speed up animations */
+    -webkit-animation-duration: 0.55s;
+    animation-duration: 0.55s;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+}

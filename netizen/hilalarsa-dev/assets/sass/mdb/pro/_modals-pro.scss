@@ -1,0 +1,100 @@
+/*********************
+ Modals
+**********************/
+
+// Modal Login & Modal Register
+.modal-ext .modal-content {
+    .modal-header {
+        text-align: center;
+    }
+    .options {
+        float: left;
+    }
+    .modal-body .text-xs-center fieldset {
+        margin-top: 20px;
+    }
+    .call {
+        margin-top: 1rem;
+    }
+    .modal-body {
+        padding: 2rem 2rem 1rem 2rem;
+    }
+}
+
+// Modal Cart
+.modal-cart {
+    li p {
+        margin: 5px;
+        font-weight: 400;
+        .tag {
+            margin-left: 10px;
+            margin-top: 3px;
+            font-weight: 400;
+            position: absolute;
+        }
+        .quantity {
+            font-size: 16px;
+            margin-right: 7px;
+            font-weight: 300;
+        }
+    }
+    .cartPageLink {
+        margin-left: 10px;
+        a {
+            text-decoration: underline;
+            color: #666;
+        }
+    }
+    .total {
+        float: right;
+        font-weight: 400;
+    }
+}
+
+// Modals normalize 
+.cf-phone {
+    margin-left: 7px;
+}
+
+// Container that the modal scrolls within
+.side-modal {
+    position: fixed;
+    width: 400px;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    // Shell div to position the modal with bottom padding
+    .modal-dialog {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 400px;
+        margin: 10px;
+        @extend .z-depth-1-half;
+        @media (max-width: 760px) {
+            display: none;
+        }
+    }
+    // Actual modal
+    .modal-header {
+        padding: 1rem;
+        .heading {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .modal-content {
+        border: none;
+    }
+    // Modal background
+}
+
+.side-modal.fade:not(.in) .modal-dialog {
+    -webkit-transform: translate3d(25%, 0, 0);
+    transform: translate3d(25%, 0, 0);
+}
+
+// Transparent backdrop
+.transparent-bd {
+    opacity: 0!important;
+}

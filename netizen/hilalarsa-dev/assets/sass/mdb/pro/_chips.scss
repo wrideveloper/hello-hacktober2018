@@ -1,0 +1,68 @@
+.chip {
+    display: inline-block;
+    height: 32px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, .6);
+    line-height: 32px;
+    padding: 0 12px;
+    border-radius: 16px;
+    background-color: #eceff1;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    img {
+        float: left;
+        margin: 0 8px 0 -12px;
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+    }
+    .close {
+        cursor: pointer;
+        float: right;
+        font-size: 16px;
+        line-height: 32px;
+        padding-left: 8px;
+        @include transition (all 0.1s linear);
+    }
+}
+
+.chips {
+    border: none;
+    border-bottom: 1px solid $input-border-color;
+    box-shadow: none;
+    margin-bottom: 30px;
+    min-height: 45px;
+    outline: none;
+    padding-bottom: 1rem;
+    transition: all .3s;
+    &.focus {
+        border-bottom: 1px solid $input-focus-color;
+        box-shadow: 0 1px 0 0 $input-focus-color;
+    }
+    &:hover {
+        cursor: text;
+    }
+    .tag.selected {
+        border-bottom: 1px solid $input-focus-color;
+        color: #fff;
+    }
+    .input {
+        background: none;
+        border: 0;
+        color: rgba(0, 0, 0, .6);
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 500;
+        height: 32px;
+        margin-right: 20px;
+        line-height: 32px;
+        outline: 0;
+        padding: 0 !important;
+        width: 120px !important;
+    }
+    .input:focus {
+        border: 0 !important;
+        box-shadow: none !important;
+    }
+}

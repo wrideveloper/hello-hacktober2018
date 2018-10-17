@@ -1,0 +1,240 @@
+// TABS
+.nav-tabs {
+    border: 0;
+    padding: 0.7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: -20px;
+    z-index: 2;
+    position: relative;
+    @extend .z-depth-2;
+    .nav-item + .nav-item {
+        margin-left: 0;
+    }
+    .nav-link {
+        border: 0;
+        color: #fff;
+    }
+}
+
+.nav-tabs {
+    .nav-link.active,
+    .nav-item.open .nav-link {
+        @include plain-hover-focus {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            @include transition(all 1s);
+            @include border-radius(2px);
+        }
+    }
+}
+
+.md-pills {
+    @extend .z-depth-0;
+    li {
+        padding: 10px;
+    }
+    .nav-link {
+        color: #666;
+        text-align: center;
+    }
+    .nav-item .nav-link {
+        @include border-radius(2px);
+        &:hover {
+            background-color: $rgba-grey-light;
+            @include transition(all 0.4s);
+        }
+        &.active {
+            color: #fff;
+            @extend .z-depth-1-half;
+            @include border-radius(2px);
+            @include transition(all 0.4s);
+        }
+    }
+    &.pills-primary {
+        .nav-item .nav-link {
+            &.active {
+                background-color: $primary-color;
+            }
+        }
+    }
+    &.pills-danger {
+        .nav-item .nav-link {
+            &.active {
+                background-color: $danger-color-dark;
+            }
+        }
+    }
+    &.pills-default {
+        .nav-item .nav-link {
+            &.active {
+                background-color: $default-color;
+            }
+        }
+    }
+    &.pills-secondary {
+        .nav-item .nav-link {
+            &.active {
+                background-color: $secondary-color;
+            }
+        }
+    }
+    &.pills-success {
+        .nav-item .nav-link {
+            &.active {
+                background-color: $success-color;
+            }
+        }
+    }
+    &.pills-info {
+        .nav-item .nav-link {
+            &.active {
+                background-color: $info-color;
+            }
+        }
+    }
+    &.pills-warning {
+        .nav-item .nav-link {
+            &.active {
+                background-color: $warning-color-dark;
+            }
+        }
+    }
+    &.pills-ins {
+        .nav-item .nav-link {
+            &.active {
+                background-color: $ins-color;
+            }
+        }
+    }
+}
+
+.tab-content {
+    padding: 1rem;
+    padding-top: 2rem;
+    z-index: 1;
+    &.vertical {
+        padding-top: 0;
+    }
+}
+
+.tabs-5 li {
+    width: 20%;
+    margin-left: 0;
+}
+
+.tabs-4 li {
+    width: 25%;
+}
+
+.tabs-3 li {
+    width: 33.3%;
+}
+
+.tabs-2 li {
+    width: 50%;
+}
+
+.tabs-5,
+.tabs-4,
+.tabs-3,
+.tabs-2 {
+    text-align: center;
+}
+
+// Classic tabs
+.tabs-wrapper {
+    overflow-x: hidden;
+}
+
+.classic-tabs {
+    @include flexbox()
+    white-space: nowrap;
+    overflow-x:auto;
+    @media (min-width: 62rem) {
+        overflow-x:hidden;
+    }
+    li {
+        @include flex(1 0 30%);
+        @media (min-width: 62em) {
+            flex:inherit;
+        }
+        a {
+            display:block;
+            padding:20px 24px;
+            font-size:13px;
+            text-transform:uppercase;
+            color:rgba(255,255,255,.7);
+            text-align:center;
+            &.active {
+                border-bottom:2px solid #ffeb3b;
+                color:#fff;
+            }
+        }
+        @media (min-width: 62em) {
+            &:first-child {
+                margin-left:56px;
+            }           
+        }
+    }
+    &.tabs-grey {
+        background-color:#546e7a;
+        li {
+            a {
+                &.active {
+                    border-color:#fff;
+                }
+            }
+        }
+    }
+    &.tabs-cyan {
+        background-color:#00bcd4;
+        li {
+            a {
+                &.active {
+                    border-color:#ffeb3b;
+                }
+            }
+        }
+    }
+    &.tabs-pink {
+        background-color:#ec407a;
+        li {
+            a {
+                &.active {
+                    border-color:#673ab7;
+                }
+            }
+        }
+    }
+    &.tabs-orange {
+        background-color:#ffa000;
+        li {
+            a {
+                &.active {
+                    border-color:#e53935;
+                }
+            }
+        }
+    }
+    &.tabs-green {
+        background-color:#7cb342;
+        li {
+            a {
+                &.active {
+                    border-color:#1565c0;
+                }
+            }
+        }
+    }
+    &.tabs-primary {
+        background-color:#4285F4;
+        li {
+            a {
+                &.active {
+                    border-color:#fff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+// SCROLLSPY
+.nav-pills .nav-item {
+    a {
+        color: #666;
+    }
+    .active {
+        background-color: transparent;
+        color: $mdb-color;
+        border-left: 2px solid $mdb-color;
+        font-weight: 500;
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: transparent;
+            color: $mdb-color;
+            font-weight: 500;
+        }
+    }
+    &:hover {
+        background-color: transparent;
+        color: $mdb-color; 
+        font-weight: 500;
+        border-left: 1px solid $mdb-color;
+    }
+}
+
+.nav-pills .nav-item+.nav-item {
+    margin-left: 0;
+}
+
+@media only screen and (max-width: 769px) {
+    .sticky,
+    .sticky-placeholder {
+        display: none; 
+    }
+}
+
+#scrollspy {
+    width: 120px;
+}
+@media only screen and (max-width: 992px) {
+    .col-md-4 .sticky, .col-lg-4 .sticky, .col-xl-4 .sticky {
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .col-md-4 .sticky  .col-lg-4 .sticky, .col-xl-4 .sticky {
+        width: 400px;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .col-md-4 .sticky {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .col-md-4 .sticky {
+        width: 350px;
+    }
+}
+
+// Dotted scrollspy
+
+.dotted-scrollspy {
+    display:block;
+    position: fixed;
+    top:50%;
+    right:0;
+    @include transform(translateY(-50%));
+    background: rgba(0,0,0,.55);
+    @include border-radius(2px 0 0 2px);
+    li {
+        display:block;
+        padding:0 16px;
+        &:first-child {
+            padding-top:10px;
+        }
+        &:last-child {
+            padding-bottom: 10px;
+        }
+        a {
+            span {
+                display:block;
+                background-color:rgba(255,255,255,.54);
+                width:8px;
+                height:8px;
+                border-radius:50%;
+            }
+            &.active {
+                span {
+                    background:#fff;
+                }
+            }
+        }
+    }
+}

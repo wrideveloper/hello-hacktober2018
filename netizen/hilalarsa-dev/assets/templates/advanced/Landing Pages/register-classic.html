@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap Template</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="../../../css/mdb.min.css" rel="stylesheet">
+
+
+
+    <style>
+        html,
+        body,
+        header,
+        .view {
+            height: 100%;
+        }
+        /* Navigation*/
+        
+        .navbar {
+            background-color: transparent;
+        }
+        
+        .top-nav-collapse {
+            background-color: #154771;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .navbar {
+                background-color: #154771;
+            }
+        }
+        /*Intro*/
+        
+        .view {
+            background: url("http://mdbootstrap.com/images/regular/people/img%20(61).jpg")no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        
+        @media (max-width: 768px) {
+            .full-bg-img,
+            .view {
+                height: auto;
+                position: relative;
+            }
+        }
+        
+        .description {
+            padding-top: 25%;
+            padding-bottom: 3rem;
+            color: #fff
+        }
+        
+        @media (max-width: 992px) {
+            .description {
+                padding-top: 7rem;
+                text-align: center;
+            }
+        }
+        
+        /*Footer*/
+        @media (max-width: 768px) {
+            .flex-center {
+                align-items: center;
+            }
+        }
+        @media (max-width: 1200px) {
+            .flex-center {
+                align-items: left;
+            }
+        }
+        footer.page-footer {
+            background-color: #275C88;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--Navigation & Intro-->
+    <header>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
+
+            <!-- Collapse button-->
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+            <i class="fa fa-bars"></i></button>
+
+            <div class="container">
+
+                <!--Collapse content-->
+                <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                    <!--Navbar Brand-->
+                    <a class="navbar-brand" href="http://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">MDB</a>
+                    <!--Links-->
+                    <ul class="nav navbar-nav smooth-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#best-features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#examples-of-use">Examples</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#our-team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!--Navbar icons-->
+                    <ul class="nav navbar-nav nav-flex-icons">
+
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="fa fa-instagram"></i></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!--/.Collapse content-->
+
+            </div>
+
+        </nav>
+        <!--/.Navbar-->
+
+        <!--Mask-->
+        <div class="view hm-black-strong">
+            <div class="full-bg-img flex-center">
+                <div class="container">
+                    <div class="row" id="home">
+
+                        <!--First column-->
+                        <div class="col-lg-6">
+                            <div class="description">
+                                <h2 class="h2-responsive wow fadeInLeft">Sign up right now! </h2>
+                                <hr class="hr-dark wow fadeInLeft">
+                                <p class="wow fadeInLeft" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae, quisquam iste, maiores. Nulla.</p>
+                                <br>
+                                <a class="btn btn-outline-white btn-lg wow fadeInLeft" data-wow-delay="0.7s">Learn more</a>
+                            </div>
+                        </div>
+                        <!--/.First column-->
+
+                        <!--Second column-->
+                        <div class="col-lg-6 wow fadeInRight">
+                            <!--Form-->
+                            <div class="card wow fadeInRight">
+                                <div class="card-block">
+                                    <!--Header-->
+                                    <div class="text-xs-center">
+                                        <h3><i class="fa fa-user"></i> Register:</h3>
+                                        <hr>
+                                    </div>
+
+                                    <!--Body-->
+                                    <div class="md-form">
+                                        <i class="fa fa-user prefix"></i>
+                                        <input type="text" id="form3" class="form-control">
+                                        <label for="form3">Your name</label>
+                                    </div>
+                                    <div class="md-form">
+                                        <i class="fa fa-envelope prefix"></i>
+                                        <input type="text" id="form2" class="form-control">
+                                        <label for="form2">Your email</label>
+                                    </div>
+
+                                    <div class="md-form">
+                                        <i class="fa fa-lock prefix"></i>
+                                        <input type="password" id="form4" class="form-control">
+                                        <label for="form4">Your password</label>
+                                    </div>
+
+                                    <div class="text-xs-center">
+                                        <button class="btn btn-ins btn-lg">Sign up</button>
+                                        <hr>
+                                        <fieldset class="form-group">
+                                            <input type="checkbox" id="checkbox1">
+                                            <label for="checkbox1">Subscribe me to the newsletter</label>
+                                        </fieldset>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--/.Form-->
+                        </div>
+                        <!--/Second column-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.Mask-->
+
+    </header>
+    <!--/Navigation & Intro-->
+    
+    <!--Main layout-->
+    <main>
+        <div class="container">
+        
+            <!--Section: Features v.3-->
+            <section class="section feature-box" id="best-features">
+
+                <!--Section heading-->
+                <h1 class="section-heading wow fadeIn" data-wow-delay="0.2s">Why is it so great?</h1>
+                <!--Section description-->
+                <p class="section-description lead wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
+
+                <!--First row-->
+                <div class="row features-small">
+
+                    <!--First column-->
+                    <div class="col-md-5 m-b-r center-on-small-only wow pulse" data-wow-delay="0.2s">
+                        <img src="http://mdbootstrap.com/wp-content/uploads/2016/07/img-2-min.jpg" alt="" class="z-depth-0">
+                    </div>
+                    <!--/First column-->
+
+                    <!--Second column-->
+                    <div class="col-md-7 center-on-small">
+                        <!--First row-->
+                        <div class="row wow pulse" data-wow-delay="0.4s">
+                            <div class="col-xs-1">
+                                <i class="fa fa-bank indigo-text"></i>
+                            </div>
+                            <div class="col-xs-10">
+                                <h4 class="feature-title">Safety</h4>
+                                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                        </div>
+                        <!--/First row-->
+
+                        <div style="height:50px"></div>
+
+                        <!--Second row-->
+                        <div class="row wow pulse" data-wow-delay="0.5s">
+                            <div class="col-xs-1">
+                                <i class="fa fa-code indigo-text"></i>
+                            </div>
+                            <div class="col-xs-10">
+                                <h4 class="feature-title">Technology</h4>
+                                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                        </div>
+                        <!--/Second row-->
+
+                        <div style="height:50px"></div>
+
+                        <!--Third row-->
+                        <div class="row wow pulse" data-wow-delay="0.6s">
+                            <div class="col-xs-1">
+                                <i class="fa fa-money indigo-text"></i>
+                            </div>
+                            <div class="col-xs-10">
+                                <h4 class="feature-title">Finance</h4>
+                                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                        </div>
+                        <!--/Third row-->
+                    </div>
+                    <!--/Second column-->
+                </div>
+                <!--/First row-->
+
+            </section>
+            <!--/Section: Features v.3-->
+            
+            <hr class="between-sections">
+            
+            <!--Projects section v.2-->
+            <section class="section" id="examples-of-use">
+
+                <!--Section heading-->
+                <h1 class="section-heading wow fadeIn" data-wow-delay="0.2s">Our best projects</h1>
+                <!--Section description-->
+                <p class="section-description wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
+
+                <!--First row-->
+                <div class="row text-xs-center">
+
+                    <!--First column-->
+                    <div class="col-lg-4 col-md-6 mb-r wow fadeInUp">
+
+                        <!--Featured image-->
+                        <div class="view overlay hm-white-slight z-depth-2">
+                            <img src="http://mdbootstrap.com/images/regular/city/img%20(21).jpg">
+                            <a>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+
+                        <!--Excerpt-->
+                        <div class="card-block">
+                            <h5 class="red-text"><i class="fa fa-money"></i> Business</h5>
+                            <h3>Project title</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam.</p>
+                            <a class="btn btn-ins"><i class="fa fa-clone left"></i> View project</a>
+                        </div>
+
+                    </div>
+                    <!--/First column-->
+
+                    <!--Second column-->
+                    <div class="col-lg-4 col-md-6 mb-r wow fadeInUp" data-wow-delay="0.2s">
+
+                        <!--Featured image-->
+                        <div class="view overlay hm-white-slight z-depth-2">
+                            <img src="http://mdbootstrap.com/images/regular/city/img%20(22).jpg">
+                            <a>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+
+                        <!--Excerpt-->
+                        <div class="card-block">
+                            <h5 class="teal-text"><i class="fa fa-pie-chart"></i> Marketing</h5>
+                            <h3>Project title</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam.</p>
+                            <a class="btn btn-ins"><i class="fa fa-clone left"></i> View project</a>
+                        </div>
+
+                    </div>
+                    <!--/Second column-->
+
+                    <!--Third column-->
+                    <div class="col-lg-4 col-md-6 mb-r wow fadeInUp" data-wow-delay="0.4s">
+
+                        <!--Featured image-->
+                        <div class="view overlay hm-white-slight z-depth-2">
+                            <img src="http://mdbootstrap.com/images/regular/city/img%20(24).jpg">
+                            <a>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+
+                        <!--Excerpt-->
+                        <div class="card-block">
+                            <h5 class="cyan-text"><i class="fa fa-desktop"></i> Software</h5>
+                            <h3>Project title</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam.</p>
+                            <a class="btn btn-ins"><i class="fa fa-clone left"></i> View project</a>
+                        </div>
+
+                    </div>
+                    <!--/Third column-->
+                </div>
+                <!--/First row-->
+            </section>
+            <!--/Projects section v.2-->
+            
+            <hr class="between-sections">
+            
+            <!--Section: Testimonials v.2-->
+            <section class="section" id="testimonials">
+
+                <!--Section heading-->
+                <h1 class="section-heading wow fadeIn" data-wow-delay="0.2s">Testimonials</h1>
+                <!--Section description-->
+
+                <!--Carousel Wrapper-->
+                <div id="carousel-example-1" class="carousel testimonial-carousel slide carousel-fade wow fadeInLeft" data-wow-delay="0.3s" data-ride="carousel" data-interval="false">
+
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <!--First slide-->
+                        <div class="carousel-item active">
+
+                            <div class="testimonial">
+                                <!--Avatar-->
+                                <div class="avatar">
+                                    <img src="http://mdbootstrap.com/images/avatars/img%20(1).jpg" class="rounded-circle img-fluid">
+                                </div>
+                                <!--Content-->
+                                <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore cum accusamus eveniet molestias voluptatum inventore laboriosam labore sit, aspernatur praesentium iste impedit quidem dolor veniam vel repudiandae excepturi tenetur illo.</p>
+
+                                <h4>Anna Deynah</h4>
+                                <h5>Founder at ET Company</h5>
+
+                                <!--Review-->
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star-half-full"> </i>
+                            </div>
+
+                        </div>
+                        <!--/First slide-->
+
+                        <!--Second slide-->
+                        <div class="carousel-item">
+
+                            <div class="testimonial">
+                                <!--Avatar-->
+                                <div class="avatar">
+                                    <img src="http://mdbootstrap.com/images/avatars/img%20(2).jpg" class="rounded-circle img-fluid">
+                                </div>
+                                <!--Content-->
+                                <p><i class="fa fa-quote-left"></i> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+
+                                <h4>Maria Kate</h4>
+                                <h5>Photographer at Studio LA</h5>
+
+                                <!--Review-->
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                            </div>
+
+                        </div>
+                        <!--/Second slide-->
+
+                        <!--Third slide-->
+                        <div class="carousel-item">
+
+                            <div class="testimonial">
+                                <!--Avatar-->
+                                <div class="avatar">
+                                    <img src="http://mdbootstrap.com/images/avatars/img%20(3).jpg" class="rounded-circle img-fluid">
+                                </div>
+                                <!--Content-->
+                                <p><i class="fa fa-quote-left"></i> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium , totam rem aperiam, eaque ipsa quae ab illo.</p>
+
+                                <h4>John Doe</h4>
+                                <h5>Front-end Developer in NY</h5>
+
+                                <!--Review-->
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star-o"> </i>
+                            </div>
+
+                        </div>
+                        <!--/Third slide-->
+                    </div>
+                    <!--/.Slides-->
+
+                    <!--Controls-->
+                    <a class="left carousel-control" href="#carousel-example-1" role="button" data-slide="prev">
+                        <span class="icon-prev" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-1" role="button" data-slide="next">
+                        <span class="icon-next" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <!--/.Controls-->
+                </div>
+                <!--/.Carousel Wrapper-->
+
+            </section>
+            <!--Section: Testimonials v.2-->
+            
+            <hr class="between-sections">
+            
+            <!--Section: Pricing v.4-->
+            <section class="section" id="pricing">
+
+                <!--Section heading-->
+                <h1 class="section-heading wow fadeIn" data-wow-delay="0.2s">Our pricing plans</h1>
+                <!--Section description-->
+                <p class="section-description wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
+
+                <!--First row-->
+                <div class="row">
+
+                    <!--First column-->
+                    <div class="col-lg-4 col-md-6 mb-r wow fadeIn" data-wow-delay="0.5s">
+                        <!--Card-->
+                        <div class="card z-depth-0">
+
+                            <!--Content-->
+                            <div class="text-xs-center">
+                                <div class="card-block">
+                                    <h5>Basic plan</h5>
+                                    <div class="flex-center">
+                                        <div class="card-circle">
+                                            <i class="fa fa-home orange-text"></i>
+                                        </div>
+                                    </div>
+
+                                    <!--Price-->
+                                    <h2><strong>59$</strong></h2>
+                                    <p>At ab ea a molestiae corrupti numquam quo beatae minima ratione magni accusantium repellat eveniet quia vitae.</p>
+                                    <a class="btn btn-warning btn-rounded">Buy now</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+                    </div>
+                    <!--/First column-->
+
+                    <!--Second column-->
+                    <div class="col-lg-4 col-md-6 mb-r wow fadeIn" data-wow-delay="0.6s">
+                        <!--Card-->
+                        <div class="card deep-orange-gradient">
+
+                            <!--Content-->
+                            <div class="text-xs-center white-text">
+                                <div class="card-block">
+                                    <h5>Premium plan</h5>
+                                    <div class="flex-center">
+                                        <div class="card-circle">
+                                            <i class="fa fa-group white-text"></i>
+                                        </div>
+                                    </div>
+
+                                    <!--Price-->
+                                    <h2><strong>79$</strong></h2>
+                                    <p>Esse corporis saepe laudantium velit adipisci cumque iste ratione facere non distinctio cupiditate sequi atque.</p>
+                                    <a class="btn btn-outline-white btn-rounded">Buy now</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+                    </div>
+                    <!--/Second column-->
+
+                    <!--Third column-->
+                    <div class="col-lg-4 col-md-6 mb-r wow fadeIn" data-wow-delay="0.7s">
+                        <!--Card-->
+                        <div class="card z-depth-0">
+
+                            <!--Content-->
+                            <div class="text-xs-center">
+                                <div class="card-block">
+                                    <h5>Advanced plan</h5>
+                                    <div class="flex-center">
+                                        <div class="card-circle">
+                                            <i class="fa fa-line-chart orange-text"></i>
+                                        </div>
+                                    </div>
+
+                                    <!--Price-->
+                                    <h2><strong>99$</strong></h2>
+                                    <p>At ab ea a molestiae corrupti numquam quo beatae minima ratione magni accusantium repellat eveniet quia vitae.</p>
+                                    <a class="btn btn-warning btn-rounded">Buy now</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--/.Card-->
+                    </div>
+                    <!--/Third column-->
+
+                </div>
+                <!--/First row-->
+
+            </section>
+            <!--/Section: Pricing v.4-->
+            
+            <hr class="between-sections">
+            
+            <!--Section: Team v.1-->
+            <section class="section team-section" id="our-team"> 
+
+                <!--Section heading-->
+                <h1 class="section-heading wow fadeIn" data-wow-delay="0.2s">Our amazing team</h1>
+                <!--Section description-->
+                <p class="section-description wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
+
+                <!--First row-->
+                <div class="row text-xs-center">
+
+                    <!--First column-->
+                    <div class="col-lg-3 col-md-6 mb-r wow fadeInDown">
+
+                        <div class="avatar">
+                            <img src="http://mdbootstrap.com/images/avatars/img%20(1).jpg" class="rounded-circle">
+                        </div>
+                        <h4>Anna Deynah</h4>
+                        <h5>Web Designer</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab.</p>
+
+                        <!--Facebook-->
+                        <a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
+                        <!--Twitter-->
+                        <a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a>
+                        <!--Dribbble-->
+                        <a class="icons-sm drib-ic"><i class="fa fa-dribbble"> </i></a>
+
+                    </div>
+                    <!--/First column-->
+
+                    <!--Second column-->
+                    <div class="col-lg-3 col-md-6 mb-r wow fadeInUp">
+
+                        <div class="avatar">
+                            <img src="http://mdbootstrap.com/images/avatars/img%20(3).jpg" class="rounded-circle">
+                        </div>
+                        <h4>John Doe</h4>
+                        <h5>Web Developer</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab.</p>
+
+                        <!--Linkedin-->
+                        <a class="icons-sm li-ic"><i class="fa fa-linkedin"> </i></a>
+                        <!--Facebook-->
+                        <a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
+                        <!--GitHub-->
+                        <a class="icons-sm git-ic"><i class="fa fa-github"> </i></a>
+
+                    </div>
+                    <!--/Second column-->
+
+                    <!--Third column-->
+                    <div class="col-lg-3 col-md-6 mb-r wow fadeInDown">
+
+                        <div class="avatar">
+                            <img src="http://mdbootstrap.com/images/avatars/img%20(2).jpg" class="rounded-circle">
+                        </div>
+
+                        <h4>Maria Kate</h4>
+                        <h5>Photographer</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab.</p>
+
+                        <!--Facebook-->
+                        <a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
+                        <!--Pinterest-->
+                        <a class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a>
+                        <!--Instagram-->
+                        <a class="icons-sm gplus-ins"><i class="fa fa-instagram"> </i></a>
+
+                    </div>
+                    <!--/Third column-->
+
+                    <!--Fourth column-->
+                    <div class="col-lg-3 col-md-6 mb-r wow fadeInUp">
+
+                        <div class="avatar">
+                            <img src="http://mdbootstrap.com/images/avatars/img%20(4).jpg" class="rounded-circle">
+                        </div>
+                        <h4>Sarah Melyah</h4>
+                        <h5>Front-end Developer</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab.</p>
+
+                        <!--Google +-->
+                        <a class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a>
+                        <!--Facebook-->
+                        <a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a>
+                        <!--GitHub-->
+                        <a class="icons-sm git-ic"><i class="fa fa-github"> </i></a>
+
+                    </div>
+                    <!--/Fourth column-->
+
+                </div>
+                <!--/First row-->
+
+            </section>
+            <!--/Section: Team v.1-->
+            
+            <hr class="between-sections">
+            
+            <!--Section: Contact v.2-->
+            <section class="section" id="contact">
+
+                <!--Section heading-->
+                <h1 class="section-heading wow fadeIn" data-wow-delay="0.2s">Contact</h1>
+                <!--Section description-->
+                <p class="section-description mb-5 wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
+
+                <div class="row">
+
+                    <!--First column-->
+                    <div class="col-md-8 wow pulse" data-wow-delay="0.3s">
+                        <form>
+                            <!--First row-->
+                            <div class="row">
+                                <!--First column-->
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <div class="md-form">
+                                            <input type="text" id="form41" class="form-control">
+                                            <label for="form41" class="">Your name</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Second column-->
+                                <div class="col-md-6">
+                                    <div class="md-form">
+                                        <div class="md-form">
+                                            <input type="text" id="form52" class="form-control">
+                                            <label for="form52" class="">Your email</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.First row-->
+
+                            <!--Second row-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form">
+                                        <input type="text" id="form51" class="form-control">
+                                        <label for="form51" class="">Subject</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/Second row-->
+
+                            <!--Third row-->
+                            <div class="row">
+                                <!--First column-->
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="form76" class="md-textarea"></textarea>
+                                        <label for="form76">Your message</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--/.Third row-->
+                        </form>
+
+                        <div class="center-on-small-only">
+                            <a class="btn btn-ins">Send</a>
+                        </div>
+                    </div>
+                    <!--.First column-->
+
+                    <!--Second column-->
+                    <div class="col-md-4 wow pulse" data-wow-delay="0.4s">
+                        <ul class="contact-icons">
+                            <li><i class="fa fa-map-marker fa-2x"></i>
+                                <p>New York, NY 10012, USA</p>
+                            </li>
+
+                            <li><i class="fa fa-phone fa-2x"></i>
+                                <p>+ 01 234 567 89</p>
+                            </li>
+
+                            <li><i class="fa fa-envelope fa-2x"></i>
+                                <p>contact@mdbootstrap.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--.Second column-->
+
+                </div>
+            </section>
+            <!--/Section: Contact v.2-->
+        
+        </div>    
+    </main>
+    <!--/Main layout-->
+    
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only">
+
+        <!--Footer Links-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--First column-->
+                <div class="col-md-3 offset-md-1">
+                    <h5 class="title">ABOUT MATERIAL DESIGN</h5>
+                    <p>Material Design (codenamed Quantum Paper) is a design language developed by Google. </p>
+
+                    <p>Material Design for Bootstrap (MDB) is a powerful Material Design UI KIT for most popular HTML, CSS, and JS framework - Bootstrap.</p>
+                </div>
+                <!--/.First column-->
+
+                <hr class="hidden-md-up">
+
+                <!--Second column-->
+                <div class="col-md-2 offset-md-1">
+                    <h5 class="title">Useful inks</h5>
+                    <ul>
+                        <li><a href="#!">Contact us</a></li>
+                        <li><a href="#!">About company</a></li>
+                        <li><a href="#!">Bug Report</a></li>
+                        <li><a href="#!">License</a></li>
+                        <li><a href="#!">ChangeLog</a></li>
+                        <li><a href="#!">Browsers and devices</a></li>
+                    </ul>
+                </div>
+                <!--/.Second column-->
+
+                <hr class="hidden-md-up">
+
+                <!--Third column-->
+                <div class="col-md-5">
+                    <h5 class="title">Instagram feed</h5>
+                    <div class="footer-imgs"></div>
+                    <ul class="inline-ul-img">
+                        <li><img src="http://mdbootstrap.com/images/avatars/avatar-1.jpg" alt=""></li>
+                        <li><img src="http://mdbootstrap.com/images/avatars/avatar-2.jpg" alt=""></li>
+                        <li><img src="http://mdbootstrap.com/images/avatars/avatar-8.jpg" alt=""></li>
+                        <li><img src="http://mdbootstrap.com/images/avatars/avatar-5.jpg" alt=""></li>
+                    <br>
+                        <li><img src="http://mdbootstrap.com/images/avatars/avatar-4.jpg" alt=""></li>
+                        <li><img src="http://mdbootstrap.com/images/avatars/avatar-7.jpg" alt=""></li>
+                        <li><img src="http://mdbootstrap.com/images/avatars/avatar-3.jpg" alt=""></li>
+                        <li><img src="http://mdbootstrap.com/images/avatars/avatar-6.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <!--/.Third column-->
+
+            </div>
+        </div>
+        <!--/.Footer Links-->
+
+        <hr>
+
+        <!--Call to action-->
+        <div class="call-to-action">
+            <ul>
+                <li>
+                    <h5>Register for free</h5></li>
+                <li><a href="" class="btn btn-danger">Sign up!</a></li>
+            </ul>
+        </div>
+        <!--/.Call to action-->
+
+        <hr>
+
+        <!--Social buttons-->
+        <div class="social-section">
+            <ul>
+                <li><a class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"> </i></a></li>
+                <li><a class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"> </i></a></li>
+                <li><a class="btn-floating btn-small btn-gplus"><i class="fa fa-google-plus"> </i></a></li>
+                <li><a class="btn-floating btn-small btn-li"><i class="fa fa-linkedin"> </i></a></li>
+                <li><a class="btn-floating btn-small btn-git"><i class="fa fa-github"> </i></a></li>
+                <li><a class="btn-floating btn-small btn-pin"><i class="fa fa-pinterest"> </i></a></li>
+                <li><a class="btn-floating btn-small btn-ins"><i class="fa fa-instagram"> </i></a></li>
+            </ul>
+        </div>
+        <!--/.Social buttons-->
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2015 Copyright: <a href="http://www.MDBootstrap.com"> MDBootstrap.com </a>
+
+            </div>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="../../../js/jquery-3.1.1.min.js"></script>
+
+    <!-- Tooltips -->
+    <script type="text/javascript" src="../../../js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../../../js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../../../js/mdb.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+
+</body>
+
+</html>

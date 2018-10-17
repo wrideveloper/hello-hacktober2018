@@ -1,0 +1,99 @@
+// Pricing
+//Pricing Card
+.pricing-card {
+    text-align: center;
+    .header {
+        color: #fff;
+        @extend .z-depth-1-half;
+    }
+    .price {
+        position: relative;
+        padding-top: 3rem;
+        h1 {
+            font-size: 5rem;
+            padding: 1.5rem;
+            &:before {
+                content: "$";
+                font-size: 30px;
+                position: absolute;
+                margin-left: -1.2rem;
+                margin-top: 0.7rem;
+            }
+            &:after {
+                content: "/mo";
+                font-size: 30px;
+                position: absolute;
+                margin-top: 3rem;
+            }
+        }
+        .version {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color: $rgba-black-light;
+            padding: 1rem;
+            @extend .z-depth-1;
+            h5 {
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+    .striped {
+        padding: 0.6rem;
+        .fa {
+            margin-right: 5px;
+        }
+        .fa-check {
+            color: green;
+        }
+        .fa-times {
+            color: red;
+        }
+        li {
+            border-bottom: 1px solid rgba(153, 153, 153, 0.298039);
+            margin-bottom: 1rem;
+        }
+    }
+    // Card overlay
+    &.card-overlay {
+        display: block;
+        color: #fff;
+        p {
+            color: #fff;
+        }
+        .price {
+            padding-top: 0;
+        }
+    }
+}
+
+// Additional pricing cards
+.card {
+    .card-circle {
+        border: 2px solid #e0e0e0;
+        height: 120px;
+        width: 120px;
+        margin-bottom: 2rem;
+        @extend .flex-center;
+        @include border-radius (50%);
+        .fa {
+            font-size: 4rem;
+        }
+    }
+}
+
+.naked-card {
+    h5 {
+        margin-top: 1.2rem;
+    }
+    .price {
+        padding-top: 0rem;
+    }
+    li p {
+        color: #757575;
+        strong {
+            color: #616161;
+        }
+    }
+}

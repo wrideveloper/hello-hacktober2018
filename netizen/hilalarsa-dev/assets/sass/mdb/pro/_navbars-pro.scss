@@ -1,0 +1,189 @@
+// NAVBARS PRO
+// Scrolling navbar
+@media only screen and (min-width: 768px) {
+    .scrolling-navbar {
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        .navbar-nav> li {
+            transition-duration: 1s;
+        }
+    }
+    .top-nav-collapse {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+// Don't let Navbar to overlap SideNav
+.scrolling-navbar,
+.double-nav {
+    z-index: 100;
+}
+
+// Double Navbar style
+.double-nav {
+    color: #fff;
+    a {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .dropdown .dropdown-menu {
+        a {
+            padding: 1rem;
+            color: #616161;
+        }
+    }
+    // Breadcrumb double navbar
+    .breadcrumb-dn {
+        float: left;
+        p {
+            margin: 0;
+            padding-top: 6px;
+            padding-left: 1rem;
+            font-weight: 300;
+        }
+    }
+    // Slide-out button for SideNav
+    .button-collapse {
+        position: absolute;
+        top: 1px;
+        left: 10px;
+        font-size: 1.5rem;
+    }
+    @media only screen and (min-width: 1440px) {
+        .button-collapse {
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 993px) {
+        .breadcrumb-dn {
+            display: none;
+        }
+    }
+    @media only screen and (max-width: 992px) {
+        // Font size for icons in Double Navbar
+        .nav-icons {
+            li {
+                a {
+                    font-size: 0.7rem;
+                    margin-right: 3px;
+                    .fa {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+    //nav-counter & nav-icons: MDB 4.0.1 outdated
+    .nav-counter {
+        position: absolute;
+        margin-left: -10px;
+        margin-top: -5px;
+        background-color: red;
+        color: #fff;
+        padding: 1px 5px;
+        font-size: 10px;
+        z-index: 222;
+        @include border-radius(10rem);
+    }
+    .nav-icons {
+        padding: 0;
+        margin: 0;
+        text-align: right;
+        li {
+            display: inline-block;
+            text-align: center;
+            a {
+                color: #fff;
+                font-size: 0.7rem;
+                margin-right: 3px;
+                .fa {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+.navbar .nav-item {
+    // Nav items with icons
+    .nav-link {
+        .fa {
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+    }
+    // Navbar with avatar
+    &.avatar {
+        padding: 0;
+        &.active {
+            background-color: transparent!important;
+        }
+        .dropdown-toggle {
+            padding: 0;
+            img {
+                height: 35px;
+            }
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+// Smaller navbar for small devices
+@media only screen and (max-width: 992px) {
+    .double-nav {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+}
+
+// Remove unneccesary containers margin in navbar on mobile
+@media only screen and (max-width: 768px) {
+    .double-nav .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+// Navbar collapsible
+.navbar {
+    .navbar-desktop {
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+    .button-collapse {
+        @media (min-width: 1440px) {
+            display: none;
+        }
+        @media (max-width: 1440px) {
+            display: block;
+            position: relative;
+            font-size: 1.4rem;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    }
+}
+
+// header breadcrumb
+
+.header-breadcrumb {
+    padding-top: .425rem;
+    padding-bottom: .425rem;
+    font-size:15px;
+    .breadcrumb-item {
+        &.active {
+            color:#fff;
+        }
+        &:before {
+            color:#fff;
+        }
+    }
+}

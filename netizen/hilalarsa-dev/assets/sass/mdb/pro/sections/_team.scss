@@ -1,0 +1,15 @@
+// Team
+.section {
+    &.team-section {
+        .avatar {
+            margin-bottom: 2rem;
+            @extend .flex-center;
+            .rounded-circle {
+                max-width: 200px;
+            }
+        }
+        h4,h5 {
+            margin-bottom: 1rem;
+        }
+    }
+}

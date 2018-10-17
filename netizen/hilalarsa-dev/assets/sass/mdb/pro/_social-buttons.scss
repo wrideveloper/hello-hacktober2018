@@ -1,0 +1,308 @@
+// SOCIAL BUTTONS
+//Social Counter
+.counter {
+    position: absolute;
+    margin-left: -23px;
+    margin-top: -1px;
+    background-color: red;
+    color: #fff;
+    padding: 1px 7px;
+    font-size: 11px;
+    z-index: 2;
+    @include border-radius(10rem);
+}
+
+.social-counters {
+    .btn {
+        margin-left: 9px;
+    }
+} 
+
+
+/* Buttons */
+
+.btn-fb {
+    background-color: $fb-color;
+    &:hover,
+    &:focus {
+        background-color: lighten($fb-color, 5%);
+    }
+}
+
+.btn-gplus {
+    background-color: $gplus-color;
+    &:hover,
+    &:focus {
+        background-color: lighten($gplus-color, 5%);
+    }
+}
+
+.btn-tw {
+    background-color: $tw-color;
+    &:hover,
+    &:focus {
+        background-color: lighten($tw-color, 5%);
+    }
+}
+
+.btn-li {
+    background-color: $li-color;
+    &:hover,
+    &:focus {
+        background-color: lighten($li-color, 5%);
+    }
+}
+
+.yt-bg {
+    background-color: $yt-color;
+    &:hover,
+    &:focus {
+        background-color: lighten($yt-color, 5%);
+    }
+}
+
+.ins-bg {
+    background-color: $ins-color;
+    &:hover,
+    &:focus {
+        background-color: lighten($ins-color, 5%);
+    }
+}
+
+.btn-pin {
+    background-color: $pin-color;
+    &:hover,
+    &:focus {
+        background-color: lighten($pin-color, 5%);
+    }
+}
+
+.btn-ins {
+    background-color: $ins-color;
+    &:hover,
+    &:focus {
+        background-color: lighten($ins-color, 5%);
+    }
+}
+
+.btn-yt {
+    background-color: $yt-color;
+    &:hover,
+    &:focus {
+        background-color: lighten($yt-color, 5%);
+    }
+}
+
+.btn-vk {
+    background-color: $vk-color;
+    &:hover,
+    &:focus {
+        background-color: lighten($vk-color, 5%);
+    }
+}
+
+.btn-git {
+    background-color: $git-color;
+    &:hover,
+    &:focus {
+        background-color: lighten($git-color, 5%);
+    }
+}
+
+.btn-comm {
+    background-color: $comm-color;
+    &:hover,
+    &:focus {
+        background-color: lighten($comm-color, 5%);
+    }
+}
+
+.btn-email {
+    background-color: $stylish-color;
+    &:hover,
+    &:focus {
+        background-color: lighten($stylish-color, 5%);
+    }
+}
+
+.btn-dribbble {
+    background-color: $drib-color;
+    &:hover,
+    &:focus {
+        background-color: lighten($drib-color, 5%);
+    }
+}
+
+.btn-so {
+    background-color: $so-color;
+    &:hover,
+    &:focus {
+        background-color: lighten($so-color, 5%);
+    }
+}
+
+/* Icons */
+
+.icons-sm {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.fb-ic {
+    color: $fb-color!important;
+    &:hover,
+    &:focus {
+        color: $fb-color;
+    }
+}
+
+.gplus-ic {
+    color: $gplus-color!important;
+    &:hover,
+    &:focus {
+        color: $gplus-color;
+    }
+}
+
+.tw-ic {
+    color: $tw-color!important;
+    &:hover,
+    &:focus {
+        color: $tw-color;
+    }
+}
+
+.li-ic {
+    color: $li-color!important;
+    &:hover,
+    &:focus {
+        color: $li-color;
+    }
+}
+
+.yt-ic {
+    color: $yt-color!important;
+    &:hover,
+    &:focus {
+        color: $yt-color;
+    }
+}
+
+.dribbble-ic {
+    color: $drib-color!important;
+    &:hover,
+    &:focus {
+        color: $drib-color;
+    }
+}
+
+.ins-ic {
+    color: $ins-color!important;
+    &:hover,
+    &:focus {
+        color: $ins-color;
+    }
+}
+
+.pin-ic {
+    color: $pin-color!important;
+    &:hover,
+    &:focus {
+        color: $pin-color;
+    }
+}
+
+.vk-ic {
+    color: $vk-color!important;
+    &:hover,
+    &:focus {
+        color: $vk-color;
+    }
+}
+
+.git-ic {
+    color: $git-color!important;
+    &:hover,
+    &:focus {
+        color: $git-color;
+    }
+}
+
+.email-ic {
+    color: $stylish-color!important;
+    &:hover,
+    &:focus {
+        color: $stylish-color;
+    }
+}
+
+.comm-ic {
+   color: $comm-color!important;
+    &:hover,
+    &:focus {
+        color: $comm-color;
+    } 
+}
+
+.drib-ic {
+   color: $drib-color!important;
+    &:hover,
+    &:focus {
+        color: $drib-color;
+    } 
+}
+
+.so-ic {
+   color: $so-color!important;
+    &:hover,
+    &:focus {
+        color: $so-color;
+    } 
+}
+
+/* Social list */
+
+.social-list {
+    width: auto;
+    @extend .z-depth-1;
+    padding: 1rem;
+    li {
+        margin-top: 15px;
+    }
+    .fa {
+        margin-right: 20px;
+        font-size: 20px;
+    }
+    .fa-facebook {
+        margin-right: 26px;
+    }
+    a {
+        font-size: 20px;
+    }
+}
+
+// Author box social icons
+.personal-sm {
+    margin-bottom: 10px;
+    a {
+        padding: 5px;
+        &:first-of-type {
+            padding-left: 0;
+        }
+        .fa {
+            @include transition-duration(0.2s);
+        }
+        &:hover .fa {
+            @include transform(scale(1.2));
+        }
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .personal-sm {
+        a {
+            padding: 2px;
+        }
+    }
+}

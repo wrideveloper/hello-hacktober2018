@@ -1,0 +1,59 @@
+// Magazine components  
+.magazine-section {
+    .view {
+        margin-bottom: 2rem;
+    }
+    .single-news {
+        border-bottom: 1px solid #e0e0e0;
+        margin-bottom: 1.5rem;
+        &:last-of-type {
+            border-bottom: none;
+        }
+        @media (max-width: 772px) {
+            padding-bottom: 1rem;
+        }
+        .news-data {
+            margin-bottom: 5rem;
+            h5 {
+                float: left;
+            }
+            p {
+                float: right
+            }
+        }
+        h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        a {
+            color: #424242;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            &:hover {
+                color: #616161;
+                @include transition (0.2s);
+            }
+            .fa-angle-right {
+                float: right;
+            }
+        }
+        p {
+            color: #757575;
+        }
+    }
+    &.multi-columns {
+        h5 {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .view {
+            margin-bottom: 2rem;
+        }
+        .single-news {
+            padding-bottom: 1rem;
+            strong {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

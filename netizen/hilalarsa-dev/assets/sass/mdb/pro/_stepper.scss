@@ -1,0 +1,137 @@
+// Steppers
+
+// Common styles for steppers
+
+.stepper {
+	li {
+		a {
+			padding:24px;
+			font-size:14px;
+			text-align:center;
+			.circle {
+				display:inline-block;
+				color:#fff;
+				border-radius:50%;
+				background:rgba(0,0,0,.38);
+				width:24px;
+				height:24px;
+				text-align:center;
+				line-height:24px;
+				margin-right:8px;
+			}
+			.label {
+				display:inline-block;
+				color:rgba(0,0,0,.38);
+			}
+		}
+		&.active, &.completed {
+			a {
+				.circle {
+					@extend .primary-color;
+				}
+				.label {
+					font-weight:600;
+					color:rgba(0,0,0,.87);
+				}
+			}
+		}
+		&.warning {
+			a {
+				.circle {
+					@extend .danger-color;
+				}
+			}
+		}
+	}
+}
+
+// Horizontal
+
+.stepper-horizontal {
+	position:relative;
+	display:flex;
+	justify-content: space-between;
+	li {
+		display: flex;
+		align-items: center;
+		flex: 1;
+		a {
+			.label {
+				margin-top: 10px;
+			}
+		}
+		&:not(:last-child):after {
+			content: '';
+			position: relative;
+			flex: 1;
+			margin: 0;
+			height: 1px;
+			background-color: rgba(0,0,0,0.1);
+		}
+		&:not(:first-child):before {
+			content: '';
+			position: relative;
+			flex: 1;
+			margin: 0 0rem;
+			height: 1px;
+			background-color: rgba(0,0,0,0.1);	
+		}
+		&:hover {
+			background:#ddd;
+		}
+	}
+}
+
+// Vertical
+
+.stepper-vertical {
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	justify-content: space-between;
+	li {
+		display: flex;
+		align-items: center;
+		flex: 1;
+		flex-direction: column;
+		position:relative;
+		a {
+			align-self: flex-start;
+			display:flex;
+			position:relative;
+			.circle {
+				order:1;
+			}
+			.label {
+				flex-flow: column nowrap;
+				order:2;
+			}
+
+		}
+		&.completed {
+			a {
+				.label {
+					font-weight:500;				
+				}
+			}
+		}
+		.step-content {
+			display:block;
+			margin-top:0;
+			margin-left:50px;
+			padding:15px;
+			p {
+				font-size:0.875rem;
+			}
+		}
+		&:not(:last-child):after {
+			content:" ";
+			position:absolute;
+			width:1px;
+			height:calc(100% - 40px);
+			left:35px;
+			top:55px;
+			background-color: rgba(0,0,0,0.1);
+		}
+	}
+}
