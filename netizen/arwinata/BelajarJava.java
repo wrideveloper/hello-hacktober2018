@@ -3,6 +3,6 @@ public class BelajarJava{
 	{
 		System.out.println("Hallo");
 		System.out.print("saya");
-		System.out.print("adalah arwi");
+		System.out.print(" adalah arwi");
 	}
 }
