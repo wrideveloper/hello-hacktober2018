@@ -58,6 +58,7 @@ dan buat Pull Request ke branch master
 - [@ffadilaputra](https://github.com/ffadilaputra)
 - [@hilalarsa](https://github.com/hilalarsa)
 - [@Yudhst](https://github.com/Yudhst)
+- [@imam932](https://github.com/imam932)
 
 ## :octocat: Organization
 ![](res/item.png)
