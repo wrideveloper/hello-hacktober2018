@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>DOM</title>
+    </head>
+    <body>
+        <!-- <p id="demo2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad error ipsum quas. Laboriosam hic, eveniet itaque doloribus dignissimos qui sequi quam molestias minus corrupti dolores dolorem incidunt eos officiis inventore.
+        </p>
+        <label>Textbox :</label><input type="text" id="tb" value="Gordon Ramsey">
+        <script>
+            var tb = document.getElementById("tb").value;
+            document.getElementById("demo2").textContent = tb;
+        </script> -->
+
+        <div id="dv">
+            <p id="p1">Paragraf Pertama</p>
+            <p id="p2">Paragraf kedua</p>
+        </div>
+        <script>
+            var p3 = document.createElement('p');
+            var node =  document.createTextNode('Paragraf Ketiga Dengan JS');
+            p3.appendChild(node);
+            document.getElementById('dv').appendChild(p3);
+        </script>
+    </body>
+</html>
