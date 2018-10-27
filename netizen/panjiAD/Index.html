@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="JS/form.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form id="form" onsubmit="return validateForm()">
+            <div class="col-sm-2"></div>
+            <div class="container col-sm-8">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        FORM PENDAFTARAN
+                    </div>
+                    <div class="card-body">
+                        <div class="row form-group mt-5">
+                            <label for="nim" class="col-2 col-form-label">NIM</label>
+                            <div class="col-10">
+                                <input type="number" name="nim" id="nim" title="Monggo NIM njenengan di isi" class="form-control"
+                                onblur="nimValidation()" oninput="nimValidation()" placeholder="Nomor Induk Mahasiswa">
+                                <small id="nims" class="form-check text-danger" hidden>*) Masukkan Nomor Induk Mahasiswa Anda</small>
+                            </div>
+                        </div>
+                        <div class="row form-group mt-3">
+                            <label for="nama" class="col-2 col-form-label">Nama</label>
+                            <div class="col-10">
+                                <input type="text" name="nama" id="nama" title="Monggo nama njenengan di isi" class="form-control"
+                                onblur="namaValidation()" oninput="namaValidation()" placeholder="Nama Lengkap">
+                                <small id="namas" class="form-check text-danger" hidden>*) Masukkan Nama Lengkap Anda</small>
+                            </div>
+                        </div>
+                        <div class="row form-group mt-3">
+                            <label for="alamat" class="col-2 col-form-label">Alamat</label>
+                            <div class="col-10">
+                                <textarea name="alamat" id="alamat" cols="10" rows="5" class="form-control " onblur="alamatValidation()" oninput="alamatValidation()" placeholder="Alamat"></textarea>
+                                <small id="alamats" class="form-check text-danger" hidden>*) Masukkan Alamat Anda</small>
+                            </div>
+                        </div>
+                        <div class="row form-group mt-3">
+                            <label for="pendidikan" class="col-2 col-form-label">Pendidikan</label>
+                            <div class="col-10">
+                                <select name="pendidikan" id="pendidikan" cols="10" rows="5" class="form-control" onblur="pendidikanValidation()" oninput="pendidikanValidation()">
+                                    <option value="">Pilih Pendidikan</option>
+                                    <option value="sd">SD</option>
+                                    <option value="smp">SMP</option>
+                                    <option value="smk">SMK</option>
+                                    <option value="sma">SMA</option>
+                                    <option value="sarjana">Sarjana</option>
+                                </select>
+                                <small id="pendidikans" class="form-check text-danger" hidden>*) Plih Pendidikan Anda</small>
+                            </div>
+
+                        </div>
+                        <div class="row form-group mt-3">
+                            <label for="jk" class="col-2 col-form-label">Jenis Kelamin</label>
+                            <div class="col-10">
+
+                                <div class="form-check">
+                                    <label for="laki-laki" class="form-check-label">
+                                        <input type="radio" name="jk" id="jk1" class="form-check-input" value="laki-laki" 
+                                        onclick="if(this.checked){jkValidation()}">
+                                        Laki-Laki
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    
+                                    <label for="perempuan" class="form-check-label">
+                                        <input type="radio" name="jk" id="jk2" class="form-check-input" value="perempuan" onclick="if(this.checked){jkValidation()}">
+                                        Perempuan
+                                    </label>
+                                </div>
+                                <small id="jks" class="form-check text-danger" hidden>*) Pilih Jenis Kelamin Anda</small>
+                            </div>
+                        </div>
+                        <div class="row form-group mt-3">
+                            <label for="hobi" class="col-2 col-form-label">Hobi</label>
+                            <div class="col-10">
+                                <div class="form-check">
+                                    <input type="checkbox" name="hobi[]" id="hobi1" class="form-check-input" value="ngoding" onclick="hobiValidation()">
+                                    <label for="ngoding" class="form-check-label">Ngoding</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" name="hobi[]" id="hobi2" class="form-check-input" value="ngopi" onclick="hobiValidation()">
+                                    <label for="ngopi" class="form-check-label">Ngopi</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" name="hobi[]" id="hobi3" class="form-check-input" value="nguli" onclick="hobiValidation()">
+                                    <label for="nguli" class="form-check-label">Nguli</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" name="hobi[]" id="hobi4" class="form-check-input" value="ngimpi" onclick="hobiValidation()">
+                                    <label for="ngimpi" class="form-check-label">Ngimpi</label>
+                                </div>
+                                <small id="hobis" class="form-check text-danger" hidden>*) Pilih Hobi Anda</small>
+                            </div>  
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="submit" class="btn btn-success">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <center>@Panji Awwaludi D.[TI-2F]</center>
+                </div>
+            </div>
+    </div>
+    <div class="col-2"></div>
+    </form>
+    </div>
+</body>
+
+</html>
