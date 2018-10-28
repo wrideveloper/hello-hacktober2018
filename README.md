@@ -57,6 +57,7 @@ dan buat Pull Request ke branch master
 - [@ardhapanduwinata](https://github.com/ardhapanduwinata)
 - [@dinarpratnya12](https://github.com/dinarpratnya12)
 - [@ffadilaputra](https://github.com/ffadilaputra)
+- [@farisdx](https://github.com/farisdx)
 - [@hilalarsa](https://github.com/hilalarsa)
 - [@Yudhst](https://github.com/Yudhst)
 - [@imam932](https://github.com/imam932)
