@@ -69,6 +69,7 @@ dan buat Pull Request ke branch master
 - [@Yudhst](https://github.com/Yudhst)
 - [@imam932](https://github.com/imam932)
 - [@ikaru19](https://github.com/ikaru19)
+- [@shanks57](https://github.com/shanks57)
 - [@mirfanrafif](https://github.com/mirfanrafif)
 
 ## :octocat: Organization
