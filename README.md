@@ -60,6 +60,7 @@ dan buat Pull Request ke branch master
 
 ## :trollface: Kontributor
 
+- [@richoandika](https://github.com/richoandika)
 - [@ardhapanduwinata](https://github.com/ardhapanduwinata)
 - [@dinarpratnya12](https://github.com/dinarpratnya12)
 - [@ffadilaputra](https://github.com/ffadilaputra)
