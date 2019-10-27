@@ -1,0 +1,461 @@
+:root {
+  --main-modal-background: #fafafa;
+  --appbar-height: 32px;
+}
+
+body {
+	background-color: white;
+  overflow-x: hidden;
+}
+input{
+	color: black;
+}
+
+td{
+	text-align: left;
+}
+th{
+	text-align: left;
+}
+
+.settings_switch{
+	margin: 14px 0px;
+	vertical-align: middle;
+	display: flex;
+}
+
+.settings_switch > span{
+	width: calc(100% - 68px);
+	display: inline-block;
+}
+.settings_switch > label{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.remove-margin{
+	margin:0px;
+	padding-bottom: 3px;
+}
+.secondary-text{
+	opacity: 0.75;
+}
+
+.path-example{
+	opacity: 0.75;
+	margin:0px;
+	margin-bottom: 12px;
+}
+hr{
+	opacity: 0.5;
+}
+
+#initializing {
+	z-index: 98;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+#modal_login_autologin{
+	line-height: 36px;
+}
+*:focus{
+	outline-color: #3f51b5;
+}
+
+#initializing>div {
+	width: 100%;
+}
+
+.resize-padding{
+	-webkit-app-region: no-drag !important;
+	margin:0px;
+}
+
+.btn-input{
+	height: 43px;
+	line-height: 43px;
+	font-size: 15px;
+	padding: 0 28px;
+	margin: 0px;
+}
+
+#title-bar {
+	-webkit-user-select: none;
+	-webkit-app-region: drag;
+	overflow: hidden !important;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 99;
+	height: 32px;
+	line-height: 32px;
+	padding: 0;
+	margin: 0;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#title-bar #title {
+	position: absolute;
+	top: 0px;
+	left: 6px;
+	color: #fff;
+}
+
+#title-bar #title-bar-btns {
+	-webkit-user-select: none;
+	-webkit-app-region: no-drag;
+	position: absolute;
+	top: 0px;
+	right: 6px;
+}
+
+#title-bar #title-bar-btns button {
+	line-height: 0px;
+	height: 32px;
+	background-color: transparent;
+	border: none;
+	color: #F1F1F1;
+	font-size: 14px;
+	padding: 0 3px;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+
+#title-bar #title-bar-btns button:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+#title-bar #title-bar-btns {
+	right: 0px !important;
+}
+
+#title-bar #title-bar-btns i {
+	font-size: 20px;
+	padding: 0 10px;
+}
+.modal-custom-header > .modal-content{
+	padding: 0px !important;
+}
+.modal-container{
+	padding: 8px 24px;
+}
+.trackList-header{
+	background-position: 0% 35%;
+	background-size: cover;
+	padding: 220px 24px 8px;
+}
+.valignicon{
+  vertical-align: middle !important;
+}
+
+#slide-out .background{
+	background-image: url("../img/bg.png");
+	-webkit-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+}
+
+#main_icon{
+	position: absolute;
+	margin-top: 32px;
+	top: 58px;
+	left: calc(50% - 37.5px);
+	width: 75px;
+	height: 75px;
+}
+
+nav {
+	background-image: url("../img/bg.png");
+	-webkit-background-size: cover;
+	background-size: cover;
+	overflow: auto;
+	position: relative;
+	height: auto;
+	top: -1px;
+	margin-top: 32px;
+	padding-bottom: 60px;
+	-webkit-clip-path: polygon(0 0, 0 60%, 100% 100%, 100% 0);
+	width: 100%;
+}
+.deezloader-black{
+	background-color: #23232c;
+}
+
+/* The Modal (background) */
+.smallmodal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1250; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  animation-duration: 0.3s;
+}
+
+/* Modal Content */
+.smallmodal-content {
+  background-color: none;
+  margin: auto;
+  width: 20%;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.smallmodal-content .btn{
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+/* Link Analyzer*/
+.link_analyzer_info{
+	display: flex;
+	padding-top: 16px;
+}
+
+.link_analyzer_maininfo{
+	display: inline;
+	padding-left: 16px;
+	width: -webkit-fill-available;
+}
+
+.link_analyzer_sideinfo{
+    width: 250px;
+    min-width: 250px;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 992px) {
+	#nav-mobile .left{
+		margin-right: 0px;
+	}
+  .smallmodal-content{
+    width: 50%
+  }
+}
+
+@media only screen and (max-width: 600px) {
+	nav {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	.container{
+		margin: auto 0px;
+		width: 100%
+	}
+	.modal{
+		width: 100%;
+		margin: 0px;
+		max-height: calc(100% - var(--appbar-height));
+		height: 100% !important;
+		top: var(--appbar-height) !important;
+	}
+  .smallmodal-content{
+    width: 90%;
+  }
+	#main_icon{
+		top: 4px;
+		left: calc(50% - 25px);
+		width: 50px;
+		height: 50px;
+	}
+	.btn{
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	#modal_login_btn_signup, #modal_login_btn_login{
+		margin-top: 8px;
+	}
+
+	#link_analyzer_song_maininfo{
+		padding: 0px 8px;
+	}
+
+	.link_analyzer_maininfo{
+		padding: 0px 8px;
+	}
+}
+
+nav .brand-logo{
+	margin-left: 24px;
+}
+
+nav .description {
+	font-size: 20px;
+	font-weight: 300;
+	padding: 8px 0;
+	margin: 0px;
+	padding-bottom: 20px;
+}
+
+nav .description:after {
+	content: "";
+	display: block;
+	width: 20%;
+	position: relative;
+	height: 2px;
+	background-color: #fff;
+	text-align: center;
+	margin: 0 auto;
+	top: 16px;
+	margin-bottom: 24px;
+}
+
+nav .brand-logo.left{
+	margin-left: 45px;
+}
+
+.nav-content{
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.50) 100%);
+	height: auto;
+}
+
+.container {
+	margin-top: 12px;
+	margin-bottom: 50px;
+}
+#tab-nav {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+#main-content{
+	margin-top: 12px;
+}
+
+.inline-input-group {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	overflow: hidden;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+	-webkit-align-content: space-between;
+	align-content: space-between;
+}
+
+.inline-input-group>* {
+	margin-left: 5px !important;
+	margin-right: 5px !important;
+}
+
+.loadingTab tr{
+	background-color: transparent !important;
+}
+
+::-webkit-scrollbar {
+	height: 4px;
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #fafafa;
+}
+
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: #2692b7;
+}
+
+body::-webkit-scrollbar {
+	width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+	background: #23232c;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #2692b7;
+}
+
+footer.page-footer{
+	width: 100%;
+	bottom:0;
+	position: fixed;
+	left: 0;
+	height: 50px;
+	padding-left: 12px;
+	z-index: 99;
+	padding-top: 0;
+	color: rgba(255,255,255,0.7);
+	-webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 75%);
+}
+
+a.single-cover {
+  position: relative;
+  display: inline-block;
+}
+
+.preview_controls {
+	opacity: 0;
+  display: block;
+  background: rgba(0, 0, 0, .5);
+	width: 56px;
+	height: 56px;
+	text-align: center;
+	line-height: 56px;
+  position: absolute;
+	border-radius: 5px;
+  top: 0;
+  right: 0;
+}
+.rounded{
+	border-radius: 5px;
+}
+
+input, button, textarea, :focus {
+    outline: none; /* You should add some other style for :focus to help UX/a11y */
+}
+
+a:not([draggable=true]), img:not([draggable=true]) {
+    -webkit-user-drag: none;
+    user-drag: none; /* Technically not supported in Electron yet */
+}
+a[href^="http://"],
+a[href^="https://"],
+a[href^="ftp://"] {
+    -webkit-user-drag: auto;
+    -webkit-touch-callout: none;
+    user-drag: auto; /* Technically not supported in Electron yet */
+}
+.preview_playlist_controls{
+	cursor:pointer;
+}
+.toast{
+	justify-content: normal !important;
+}
+
+.brand-logo{
+	margin-left: 0px !important;
+}
+
+.btn{
+	overflow: hidden;
+}
+
+.resultLink{
+	cursor:pointer;
+	text-decoration: underline;
+}
+
+input[type=search]::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+	height: 18px;
+	width: 18px;
+	background: #AAAAAA;
+	-webkit-mask-image: url("../img/cancel.svg");
+  mask-image: url("../img/cancel.svg");
+}
