@@ -1,0 +1,120 @@
+@mixin rpp-mixin-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @mixin rpp-mixin-clean-button {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
+    padding: 0;
+    width: max-content;
+    cursor: pointer;
+  
+    &:focus,
+    *:focus {
+      outline: none;
+    }
+    transition: ease-in-out;
+  }
+  
+  /** font **/
+  $rpp-font-size-normal: 1.1rem;
+  $rpp-font-size-small: 0.7rem;
+  
+  /** border **/
+  $rpp-border-radius-normal: 0.8rem;
+  $rpp-border-radius-small: 0.4rem;
+  
+  /** padding **/
+  $rpp-padding-normal: 1rem;
+  $rpp-padding-small: 0.8rem;
+  
+  /** colors **/
+  $color-info: #1d72f3;
+  $color-success: #2dc43e;
+  $color-warning: #ffc007;
+  $color-error: #d0302f;
+  
+  /** Base colors **/
+  $rpp-color-white: #ffffff;
+  $rpp-color-black: #332927;
+  $rpp-color-primary: #ff2426;
+  $rpp-color-primary-light: #ff9259;
+  $rpp-color-disabled: #b8b4b4;
+  $rpp-color-text: #706967;
+  $rpp-color-gray-light: #e5e5e4;
+  
+  body {
+    margin: 0;
+    padding: 2rem;
+    width: 100vw;
+    font-family: Arial;
+    position: relative;
+    background: #eee;
+  }
+  
+  * {
+    box-sizing: border-box;
+    line-height: 1.2;
+  }
+  
+  .rpp-stepper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  
+    .rpp-stepper-divider {
+      align-self: center;
+      height: 2px;
+      background-color: $rpp-color-disabled;
+    }
+  
+    .rpp-stepper-item {
+      @include rpp-mixin-clean-button;
+      display: grid;
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+      border-radius: 50%;
+      position: relative;
+      border: 2px solid $rpp-color-disabled;
+      font-size: $rpp-font-size-normal;
+      cursor: default;
+      
+      &.rpp-stepper-item-completed {
+        background: $rpp-color-disabled;
+  
+        .rpp-stepper-item-content {        
+          display: none
+        }
+        
+        &::after {
+          align-self: center;
+          content: "\2713";
+          border-radius: 50%;
+          color: $rpp-color-white;
+          font-size: $rpp-font-size-normal;
+          text-align: center;
+        }
+      }
+  
+      &.rpp-active {
+        background: $rpp-color-black;
+        color: $rpp-color-white;
+        border-color: $rpp-color-black;
+      }
+  
+      &.rpp-stepper-item-pending {
+        color: $rpp-color-disabled;
+        background: $rpp-color-white;
+      }
+  
+      .rpp-stepper-item-content {
+        text-align: center;
+        align-self: center;
+      }
+    }
+  }
