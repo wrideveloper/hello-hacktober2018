@@ -1,0 +1,104 @@
+body,
+html {
+  scroll-behavior: smooth;
+  text-decoration: none !important;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.customHeader div .d-inline-block {
+  line-height: 2;
+}
+
+.customHeader a .headerTitle {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffc107;
+}
+
+.bgColor {
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  background-color: #9c835f;
+}
+
+.gameContent {
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+.gameContent .row div h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.gameContent .row.contentImage .col-4 {
+  height: 75px;
+}
+
+.gameContent .row.contentImage img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.gameContent .row div.greyBox {
+  border-radius: 15%;
+}
+
+.gameContent .refresh {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.gameContent .row.contentImage .versus {
+  position: relative;
+  z-index: 1;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+}
+
+.gameContent .row.contentImage .versus h1 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #bd302f;
+}
+
+.gameContent .row.contentImage .versus .result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: rotate(-30deg);
+  margin-left: -30px;
+}
+
+.gameContent .row.contentImage .versus .result h5 {
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #4c9654;
+  border-radius: 5%;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ffffff;
+  height: 55px;
+  padding: 10px 40px;
+}
+
+.contentImage :hover img {
+  -webkit-transform: scale(1.6);
+  transform: scale(1.6);
+}
+
+.my-2 :hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}

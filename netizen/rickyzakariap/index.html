@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" />
+    <link rel="icon" href="../challenge4/assets/logo.png" type="image/svg+xml" />
+
+    <title>Tu-Tas-Ting! | Traditional Games</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="align-items-center customHeader" id="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-7 my-2">
+            <div class="d-inline-block mr-3">
+              <a href="#">
+                <svg width="40px" height="40px" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="rgb(114,76,33)" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                </svg>
+              </a>
+            </div>
+            <a href="index.html">
+              <div class="d-inline-block mr-3">
+                <img src="assets/logo.png" width="40px" height="40px" class="" alt="logo" />
+              </div>
+            </a>
+            <a href="#">
+              <div class="d-inline-block mx-auto align-middle headerTitle">Rock Paper Scissors</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of header -->
+
+    <!-- content -->
+    <div class="container-fluid bgColor">
+      <div class="container gameContent">
+        <div class="row mb-1">
+          <div class="col-4 col-sm-3 offset-sm-1 d-flex player">
+            <h3 class="m-auto">Player 1</h3>
+          </div>
+          <div class="col-4 col-sm-3 offset-2 offset-sm-4 d-flex computer">
+            <h3 class="m-auto">Com</h3>
+          </div>
+        </div>
+        <div class="row contentImage">
+          <div class="col-4 col-sm-3 offset-sm-1 d-flex">
+            <div class="m-auto greyBox playerImage px-4 py-3"><img src="assets/batu.png" class="player rock" /></div>
+          </div>
+          <div class="col-4 col-sm-3 offset-2 offset-sm-4 d-flex">
+            <div class="m-auto greyBox compuImage px-4 py-3"><img src="assets/batu.png" class="compuRock" /></div>
+          </div>
+        </div>
+
+        <div class="row align-items-center contentImage">
+          <div class="col-4 col-sm-3 offset-sm-1 d-flex">
+            <div class="m-auto greyBox playerImage px-4 py-3"><img src="assets/kertas.png" class="player paper" /></div>
+          </div>
+          <div class="col-2 col-sm-2 offset-sm-1 d-flex p-0 versus">
+            <div class="m-auto p-0">
+              <h1>VS</h1>
+              <div class="align-middle">
+                <h5></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-sm-3 offset-sm-1 d-flex">
+            <div class="m-auto greyBox compuImage px-4 py-3"><img src="assets/kertas.png" class="compuPaper" /></div>
+          </div>
+        </div>
+
+        <div class="row contentImage">
+          <div class="col-4 col-sm-3 offset-sm-1 d-flex">
+            <div class="m-auto greyBox playerImage px-4 py-3"><img src="assets/gunting.png" class="player scissor" /></div>
+          </div>
+          <div class="col-4 col-sm-3 offset-2 offset-sm-4 d-flex">
+            <div class="m-auto greyBox compuImage px-4 py-3"><img src="assets/gunting.png" class="compuScissor" /></div>
+          </div>
+        </div>
+
+        <div class="row my-2">
+          <div class="col-2 col-sm-2 offset-4 offset-sm-5 d-flex p-0">
+            <div class="m-auto p-0 reset"><img src="assets/refresh.png" class="refresh" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+  </body>
+  <script src="game.js"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</html>
